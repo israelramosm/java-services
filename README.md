@@ -21,5 +21,8 @@ implementation 'org.springframework.boot:spring-boot-starter-web'
 '''
 // Refresh dependencies
 ./gradlew build --refresh-dependencies
+// Runs the application
 ./gradlew bootRun
+// Run the tests
+./gradlew test
 '''
