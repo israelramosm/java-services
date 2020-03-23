@@ -1,4 +1,4 @@
-package com.example.services.integration;
+package com.example.integration;
 
 import static org.assertj.core.api.Assertions.*;
 

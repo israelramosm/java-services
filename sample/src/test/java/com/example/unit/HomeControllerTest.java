@@ -1,4 +1,4 @@
-package com.example.services.unit;
+package com.example.unit;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -24,7 +24,7 @@ public class HomeControllerTest {
     public void getRestTest() throws Exception {
         this.mockMvc.perform(get("/")).andDo(print())
                     .andExpect(status().isOk())
-                    .andExpect(content().string(containsString("Hello World!")));
+                    .andExpect(content().string(containsString("Greetings from Spring Boot!")));
         
     }
 }

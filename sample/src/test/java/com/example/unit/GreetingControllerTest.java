@@ -1,11 +1,10 @@
-package com.example.services.unit;
+package com.example.unit;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 
 import org.junit.jupiter.api.Test;
 
@@ -16,15 +15,22 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HelloControllerTest {
+public class GreetingControllerTest {
     
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void getHello() throws Exception {
-        this.mockMvc.perform(get("/greet")).andDo(print())
+    public void getGreeting() throws Exception {
+        this.mockMvc.perform(get("/greeting")).andDo(print())
                     .andExpect(status().isOk())
-                    .andExpect(content().string(containsString("Greetings from Spring Boot!")));
+                    .andExpect(content().string(containsString("{\"id\":1,\"content\":\"Hello, World!\"}")));
+    }
+
+    @Test
+    public void getGreetingCustomName() throws Exception {
+        this.mockMvc.perform(get("/greeting?name=Israel")).andDo(print())
+                    .andExpect(status().isOk())
+                    .andExpect(content().string(containsString("{\"id\":2,\"content\":\"Hello, Israel!\"}")));
     }
 }
