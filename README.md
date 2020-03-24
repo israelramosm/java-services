@@ -9,7 +9,7 @@ https://spring.io/guides/gs/spring-boot/
 
 ## Careful
 
-Remember add dependencies to use annotations and every implementation in springboot framework
+Remember add dependencies to use annotations and every implementation in springboot framework in build.gradle
 
 '''
 implementation 'org.springframework.boot:spring-boot-starter'
