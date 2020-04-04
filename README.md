@@ -26,3 +26,7 @@ implementation 'org.springframework.boot:spring-boot-starter-web'
 // Run the tests
 ./gradlew test
 '''
+
+## Spring Boot Token based Authentication with Spring Security & JWT
+
+[Spring Boot Token based Authentication with Spring Security & JWT](https://bezkoder.com/spring-boot-jwt-authentication/)
