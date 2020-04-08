@@ -2,7 +2,7 @@ package com.example.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.example.model.Greeting;
+import com.example.models.Greeting;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
