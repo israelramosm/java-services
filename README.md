@@ -30,3 +30,13 @@ implementation 'org.springframework.boot:spring-boot-starter-web'
 ## Spring Boot Token based Authentication with Spring Security & JWT
 
 [Spring Boot Token based Authentication with Spring Security & JWT](https://bezkoder.com/spring-boot-jwt-authentication/)
+
+## MySQL
+
+[commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm)
+
+command
+
+'''shell
+mysql -u root -p
+'''
